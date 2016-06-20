@@ -144,7 +144,7 @@ namespace jQuery_File_Upload.MVC5.Helpers
                 string[] imageArray = file.FileName.Split('.');
                 if (imageArray.Length != 0)
                 {
-                    String extansion = imageArray[imageArray.Length - 1];
+                    String extansion = imageArray[imageArray.Length - 1].ToLower();
                     if (extansion != "jpg" && extansion != "png") //Do not create thumb if file is not an image
                     {
                         
